@@ -36,10 +36,12 @@
 
 #define ENCODERS_PAD_A { B13 }
 #define ENCODERS_PAD_B { B12 }
+#define ENCODERS_PAD_A_RIGHT { B12 }
+#define ENCODERS_PAD_B_RIGHT { B13 }
 #define ENCODER_RESOLUTION 2
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 6
+#define DEBOUNCE 15
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 //#define LOCKING_SUPPORT_ENABLE
@@ -145,3 +147,6 @@
 
 #define SOFT_SERIAL_PIN B8
 #define MASTER_LEFT
+#define TAP_CODE_DELAY 10
+#define MEDIA_KEY_DELAY 10
+#define TAPPING_TERM 200
